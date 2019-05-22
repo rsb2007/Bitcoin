@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3110CEA52290A10100753BA2 /* CryptoCurrencyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110CEA42290A10100753BA2 /* CryptoCurrencyHomeViewController.swift */; };
+		3110CEA72290A16E00753BA2 /* CryptoCurrencyHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110CEA62290A16E00753BA2 /* CryptoCurrencyHomeViewModel.swift */; };
+		3110CEA92290A27500753BA2 /* DefaultCryptoCurrencyHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110CEA82290A27500753BA2 /* DefaultCryptoCurrencyHomeViewModel.swift */; };
+		31118709229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31118708229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift */; };
+		3111870B229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111870A229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift */; };
+		3111FD6122902A6600FB0CB0 /* CryptoCurrencyHistoricalPriceItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6022902A6600FB0CB0 /* CryptoCurrencyHistoricalPriceItemCell.swift */; };
+		3111FD6422902D3700FB0CB0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6322902D3700FB0CB0 /* Networking.swift */; };
+		3111FD6622902D6200FB0CB0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6522902D6200FB0CB0 /* Endpoint.swift */; };
+		3111FD6822902E8D00FB0CB0 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6722902E8D00FB0CB0 /* HTTPNetworking.swift */; };
+		3111FD6B2290329900FB0CB0 /* CryptoCurrencyHistoricalPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6A2290329900FB0CB0 /* CryptoCurrencyHistoricalPriceViewModel.swift */; };
+		3111FD6D229032C300FB0CB0 /* CryptoCurrencyHistoricalPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6C229032C300FB0CB0 /* CryptoCurrencyHistoricalPriceViewController.swift */; };
+		3111FD6F229033C300FB0CB0 /* CryptoCurrencyHistoricalPriceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6E229033C300FB0CB0 /* CryptoCurrencyHistoricalPriceDetailViewController.swift */; };
+		3111FD732290344F00FB0CB0 /* DefaultCryptoCurrencyHistoricalPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD722290344F00FB0CB0 /* DefaultCryptoCurrencyHistoricalPriceViewModel.swift */; };
+		3111FD78229036A600FB0CB0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD77229036A600FB0CB0 /* Currency.swift */; };
+		3111FD7A229036CD00FB0CB0 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD79229036CD00FB0CB0 /* CryptoCurrency.swift */; };
+		3111FD7C229038BA00FB0CB0 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD7B229038BA00FB0CB0 /* Price.swift */; };
+		3111FD7F22903ED900FB0CB0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD7E22903ED900FB0CB0 /* Reusable.swift */; };
+		3111FD88229048BF00FB0CB0 /* CryptoCurrencyPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD87229048BF00FB0CB0 /* CryptoCurrencyPriceProvider.swift */; };
+		3111FD8C22904F7500FB0CB0 /* CoinDeskAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD8B22904F7500FB0CB0 /* CoinDeskAPIService.swift */; };
+		3111FD8E2290568000FB0CB0 /* CoinDeskEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD8D2290568000FB0CB0 /* CoinDeskEndpoint.swift */; };
+		3122BEA4229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122BEA3229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift */; };
+		3122BEA622936300007D7A04 /* CryptoCurrencyHistoricalPriceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122BEA522936300007D7A04 /* CryptoCurrencyHistoricalPriceDetailViewModel.swift */; };
+		3122BEA822936354007D7A04 /* DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122BEA722936354007D7A04 /* DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift */; };
+		F657119122945B9C00F313EE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F657119022945B9C00F313EE /* NotificationCenter.framework */; };
+		F657119422945B9C00F313EE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657119322945B9C00F313EE /* TodayViewController.swift */; };
+		F657119722945B9C00F313EE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F657119522945B9C00F313EE /* MainInterface.storyboard */; };
+		F657119B22945B9C00F313EE /* BitcoinWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F657118E22945B9C00F313EE /* BitcoinWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6AC842C2291AD0D005C9AF8 /* CryptoCurrencyHistoricalPriceItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC842B2291AD0D005C9AF8 /* CryptoCurrencyHistoricalPriceItemViewModel.swift */; };
+		F6AC842E2291AD70005C9AF8 /* DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC842D2291AD70005C9AF8 /* DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift */; };
+		F6EE09E62294634C00149692 /* CoinDeskAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD8B22904F7500FB0CB0 /* CoinDeskAPIService.swift */; };
+		F6EE09E72294636800149692 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6722902E8D00FB0CB0 /* HTTPNetworking.swift */; };
+		F6EE09E82294638C00149692 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6322902D3700FB0CB0 /* Networking.swift */; };
+		F6EE09E92294638E00149692 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD6522902D6200FB0CB0 /* Endpoint.swift */; };
+		F6EE09EA2294639100149692 /* CoinDeskEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD8D2290568000FB0CB0 /* CoinDeskEndpoint.swift */; };
+		F6EE09EB2294639600149692 /* CoinDeskCurrentPriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31118708229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift */; };
+		F6EE09EC2294639800149692 /* CoinDeskHistoricalPriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111870A229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift */; };
+		F6EE09ED2294639C00149692 /* CoinDeskPriceIndexByDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122BEA3229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift */; };
+		F6EE09EE229463B200149692 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD77229036A600FB0CB0 /* Currency.swift */; };
+		F6EE09EF229463B300149692 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD79229036CD00FB0CB0 /* CryptoCurrency.swift */; };
+		F6EE09F0229463B700149692 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111FD7B229038BA00FB0CB0 /* Price.swift */; };
+		FC3E45AA22948AEC0049D91E /* CryptoCurrencyHistoricalPriceDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E45A922948AEC0049D91E /* CryptoCurrencyHistoricalPriceDetailViewCell.swift */; };
+		FCE24CFE228DF59E004E9324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE24CFD228DF59E004E9324 /* AppDelegate.swift */; };
+		FCE24D03228DF59E004E9324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE24D01228DF59E004E9324 /* Main.storyboard */; };
+		FCE24D05228DF59F004E9324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE24D04228DF59F004E9324 /* Assets.xcassets */; };
+		FCE24D08228DF59F004E9324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE24D06228DF59F004E9324 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F657119922945B9C00F313EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCE24CF2228DF59E004E9324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F657118D22945B9C00F313EE;
+			remoteInfo = BitcoinWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F657119F22945B9C00F313EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F657119B22945B9C00F313EE /* BitcoinWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3110CEA42290A10100753BA2 /* CryptoCurrencyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHomeViewController.swift; sourceTree = "<group>"; };
+		3110CEA62290A16E00753BA2 /* CryptoCurrencyHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHomeViewModel.swift; sourceTree = "<group>"; };
+		3110CEA82290A27500753BA2 /* DefaultCryptoCurrencyHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrencyHomeViewModel.swift; sourceTree = "<group>"; };
+		31118708229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDeskCurrentPriceResponse.swift; sourceTree = "<group>"; };
+		3111870A229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDeskHistoricalPriceResponse.swift; sourceTree = "<group>"; };
+		3111FD6022902A6600FB0CB0 /* CryptoCurrencyHistoricalPriceItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceItemCell.swift; sourceTree = "<group>"; };
+		3111FD6322902D3700FB0CB0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3111FD6522902D6200FB0CB0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3111FD6722902E8D00FB0CB0 /* HTTPNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
+		3111FD6A2290329900FB0CB0 /* CryptoCurrencyHistoricalPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceViewModel.swift; sourceTree = "<group>"; };
+		3111FD6C229032C300FB0CB0 /* CryptoCurrencyHistoricalPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceViewController.swift; sourceTree = "<group>"; };
+		3111FD6E229033C300FB0CB0 /* CryptoCurrencyHistoricalPriceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceDetailViewController.swift; sourceTree = "<group>"; };
+		3111FD722290344F00FB0CB0 /* DefaultCryptoCurrencyHistoricalPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrencyHistoricalPriceViewModel.swift; sourceTree = "<group>"; };
+		3111FD77229036A600FB0CB0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		3111FD79229036CD00FB0CB0 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		3111FD7B229038BA00FB0CB0 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		3111FD7E22903ED900FB0CB0 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		3111FD87229048BF00FB0CB0 /* CryptoCurrencyPriceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyPriceProvider.swift; sourceTree = "<group>"; };
+		3111FD8B22904F7500FB0CB0 /* CoinDeskAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDeskAPIService.swift; sourceTree = "<group>"; };
+		3111FD8D2290568000FB0CB0 /* CoinDeskEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDeskEndpoint.swift; sourceTree = "<group>"; };
+		3122BEA3229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDeskPriceIndexByDateResponse.swift; sourceTree = "<group>"; };
+		3122BEA522936300007D7A04 /* CryptoCurrencyHistoricalPriceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceDetailViewModel.swift; sourceTree = "<group>"; };
+		3122BEA722936354007D7A04 /* DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift; sourceTree = "<group>"; };
+		F657118E22945B9C00F313EE /* BitcoinWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BitcoinWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F657119022945B9C00F313EE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F657119322945B9C00F313EE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F657119622945B9C00F313EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F657119822945B9C00F313EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6AC842B2291AD0D005C9AF8 /* CryptoCurrencyHistoricalPriceItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceItemViewModel.swift; sourceTree = "<group>"; };
+		F6AC842D2291AD70005C9AF8 /* DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift; sourceTree = "<group>"; };
+		FC3E45A922948AEC0049D91E /* CryptoCurrencyHistoricalPriceDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyHistoricalPriceDetailViewCell.swift; sourceTree = "<group>"; };
+		FCE24CFA228DF59E004E9324 /* BitCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE24CFD228DF59E004E9324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCE24D02228DF59E004E9324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE24D04228DF59F004E9324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCE24D07228DF59F004E9324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCE24D09228DF59F004E9324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F657118B22945B9C00F313EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F657119122945B9C00F313EE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE24CF7228DF59E004E9324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3111FD6222902CDD00FB0CB0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3111FD6322902D3700FB0CB0 /* Networking.swift */,
+				3111FD6522902D6200FB0CB0 /* Endpoint.swift */,
+				3111FD6722902E8D00FB0CB0 /* HTTPNetworking.swift */,
+				3111FD8B22904F7500FB0CB0 /* CoinDeskAPIService.swift */,
+				3111FD8D2290568000FB0CB0 /* CoinDeskEndpoint.swift */,
+				31118708229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift */,
+				3111870A229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift */,
+				3122BEA3229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3111FD692290328000FB0CB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3110CEA62290A16E00753BA2 /* CryptoCurrencyHomeViewModel.swift */,
+				3110CEA82290A27500753BA2 /* DefaultCryptoCurrencyHomeViewModel.swift */,
+				3111FD6A2290329900FB0CB0 /* CryptoCurrencyHistoricalPriceViewModel.swift */,
+				3111FD722290344F00FB0CB0 /* DefaultCryptoCurrencyHistoricalPriceViewModel.swift */,
+				F6AC842B2291AD0D005C9AF8 /* CryptoCurrencyHistoricalPriceItemViewModel.swift */,
+				F6AC842D2291AD70005C9AF8 /* DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift */,
+				3122BEA522936300007D7A04 /* CryptoCurrencyHistoricalPriceDetailViewModel.swift */,
+				3122BEA722936354007D7A04 /* DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3111FD762290369800FB0CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3111FD77229036A600FB0CB0 /* Currency.swift */,
+				3111FD79229036CD00FB0CB0 /* CryptoCurrency.swift */,
+				3111FD7B229038BA00FB0CB0 /* Price.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3111FD7D22903EC800FB0CB0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3111FD7E22903ED900FB0CB0 /* Reusable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3111FD862290488800FB0CB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3111FD87229048BF00FB0CB0 /* CryptoCurrencyPriceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F657118F22945B9C00F313EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F657119022945B9C00F313EE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F657119222945B9C00F313EE /* BitcoinWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F657119322945B9C00F313EE /* TodayViewController.swift */,
+				F657119522945B9C00F313EE /* MainInterface.storyboard */,
+				F657119822945B9C00F313EE /* Info.plist */,
+			);
+			path = BitcoinWidget;
+			sourceTree = "<group>";
+		};
+		FCE24CF1228DF59E004E9324 = {
+			isa = PBXGroup;
+			children = (
+				FCE24CFC228DF59E004E9324 /* BitCoin */,
+				F657119222945B9C00F313EE /* BitcoinWidget */,
+				F657118F22945B9C00F313EE /* Frameworks */,
+				FCE24CFB228DF59E004E9324 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCE24CFB228DF59E004E9324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE24CFA228DF59E004E9324 /* BitCoin.app */,
+				F657118E22945B9C00F313EE /* BitcoinWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE24CFC228DF59E004E9324 /* BitCoin */ = {
+			isa = PBXGroup;
+			children = (
+				FCE24CFD228DF59E004E9324 /* AppDelegate.swift */,
+				FCE24D01228DF59E004E9324 /* Main.storyboard */,
+				FCE24D04228DF59F004E9324 /* Assets.xcassets */,
+				FCE24D06228DF59F004E9324 /* LaunchScreen.storyboard */,
+				FCE24D09228DF59F004E9324 /* Info.plist */,
+				3111FD762290369800FB0CB0 /* Model */,
+				FCE24D0F228F8F54004E9324 /* View */,
+				3111FD692290328000FB0CB0 /* ViewModel */,
+				3111FD6222902CDD00FB0CB0 /* Networking */,
+				3111FD862290488800FB0CB0 /* Services */,
+				3111FD7D22903EC800FB0CB0 /* Utility */,
+			);
+			path = BitCoin;
+			sourceTree = "<group>";
+		};
+		FCE24D0F228F8F54004E9324 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3110CEA42290A10100753BA2 /* CryptoCurrencyHomeViewController.swift */,
+				3111FD6C229032C300FB0CB0 /* CryptoCurrencyHistoricalPriceViewController.swift */,
+				3111FD6022902A6600FB0CB0 /* CryptoCurrencyHistoricalPriceItemCell.swift */,
+				3111FD6E229033C300FB0CB0 /* CryptoCurrencyHistoricalPriceDetailViewController.swift */,
+				FC3E45A922948AEC0049D91E /* CryptoCurrencyHistoricalPriceDetailViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F657118D22945B9C00F313EE /* BitcoinWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F657119E22945B9C00F313EE /* Build configuration list for PBXNativeTarget "BitcoinWidget" */;
+			buildPhases = (
+				F657118A22945B9C00F313EE /* Sources */,
+				F657118B22945B9C00F313EE /* Frameworks */,
+				F657118C22945B9C00F313EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinWidget;
+			productName = BitcoinWidget;
+			productReference = F657118E22945B9C00F313EE /* BitcoinWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FCE24CF9228DF59E004E9324 /* BitCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE24D0C228DF59F004E9324 /* Build configuration list for PBXNativeTarget "BitCoin" */;
+			buildPhases = (
+				FCE24CF6228DF59E004E9324 /* Sources */,
+				FCE24CF7228DF59E004E9324 /* Frameworks */,
+				FCE24CF8228DF59E004E9324 /* Resources */,
+				F657119F22945B9C00F313EE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F657119A22945B9C00F313EE /* PBXTargetDependency */,
+			);
+			name = BitCoin;
+			productName = BitCoin;
+			productReference = FCE24CFA228DF59E004E9324 /* BitCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCE24CF2228DF59E004E9324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Raj Bedi";
+				TargetAttributes = {
+					F657118D22945B9C00F313EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FCE24CF9228DF59E004E9324 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = FCE24CF5228DF59E004E9324 /* Build configuration list for PBXProject "BitCoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCE24CF1228DF59E004E9324;
+			productRefGroup = FCE24CFB228DF59E004E9324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCE24CF9228DF59E004E9324 /* BitCoin */,
+				F657118D22945B9C00F313EE /* BitcoinWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F657118C22945B9C00F313EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F657119722945B9C00F313EE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE24CF8228DF59E004E9324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE24D08228DF59F004E9324 /* LaunchScreen.storyboard in Resources */,
+				FCE24D05228DF59F004E9324 /* Assets.xcassets in Resources */,
+				FCE24D03228DF59E004E9324 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F657118A22945B9C00F313EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EE09E62294634C00149692 /* CoinDeskAPIService.swift in Sources */,
+				F6EE09ED2294639C00149692 /* CoinDeskPriceIndexByDateResponse.swift in Sources */,
+				F6EE09E72294636800149692 /* HTTPNetworking.swift in Sources */,
+				F6EE09EA2294639100149692 /* CoinDeskEndpoint.swift in Sources */,
+				F657119422945B9C00F313EE /* TodayViewController.swift in Sources */,
+				F6EE09F0229463B700149692 /* Price.swift in Sources */,
+				F6EE09EC2294639800149692 /* CoinDeskHistoricalPriceResponse.swift in Sources */,
+				F6EE09EF229463B300149692 /* CryptoCurrency.swift in Sources */,
+				F6EE09EE229463B200149692 /* Currency.swift in Sources */,
+				F6EE09E82294638C00149692 /* Networking.swift in Sources */,
+				F6EE09E92294638E00149692 /* Endpoint.swift in Sources */,
+				F6EE09EB2294639600149692 /* CoinDeskCurrentPriceResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE24CF6228DF59E004E9324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3111FD732290344F00FB0CB0 /* DefaultCryptoCurrencyHistoricalPriceViewModel.swift in Sources */,
+				3111FD6822902E8D00FB0CB0 /* HTTPNetworking.swift in Sources */,
+				3111FD6122902A6600FB0CB0 /* CryptoCurrencyHistoricalPriceItemCell.swift in Sources */,
+				3111FD7A229036CD00FB0CB0 /* CryptoCurrency.swift in Sources */,
+				3110CEA52290A10100753BA2 /* CryptoCurrencyHomeViewController.swift in Sources */,
+				3110CEA72290A16E00753BA2 /* CryptoCurrencyHomeViewModel.swift in Sources */,
+				31118709229081B700A70A59 /* CoinDeskCurrentPriceResponse.swift in Sources */,
+				FCE24CFE228DF59E004E9324 /* AppDelegate.swift in Sources */,
+				FC3E45AA22948AEC0049D91E /* CryptoCurrencyHistoricalPriceDetailViewCell.swift in Sources */,
+				3111FD6B2290329900FB0CB0 /* CryptoCurrencyHistoricalPriceViewModel.swift in Sources */,
+				F6AC842E2291AD70005C9AF8 /* DefaultCryptoCurrencyHistoricalPriceItemViewModel.swift in Sources */,
+				F6AC842C2291AD0D005C9AF8 /* CryptoCurrencyHistoricalPriceItemViewModel.swift in Sources */,
+				3111870B229081DD00A70A59 /* CoinDeskHistoricalPriceResponse.swift in Sources */,
+				3111FD7C229038BA00FB0CB0 /* Price.swift in Sources */,
+				3111FD6D229032C300FB0CB0 /* CryptoCurrencyHistoricalPriceViewController.swift in Sources */,
+				3111FD88229048BF00FB0CB0 /* CryptoCurrencyPriceProvider.swift in Sources */,
+				3111FD78229036A600FB0CB0 /* Currency.swift in Sources */,
+				3111FD8C22904F7500FB0CB0 /* CoinDeskAPIService.swift in Sources */,
+				3122BEA622936300007D7A04 /* CryptoCurrencyHistoricalPriceDetailViewModel.swift in Sources */,
+				3110CEA92290A27500753BA2 /* DefaultCryptoCurrencyHomeViewModel.swift in Sources */,
+				3111FD6F229033C300FB0CB0 /* CryptoCurrencyHistoricalPriceDetailViewController.swift in Sources */,
+				3111FD7F22903ED900FB0CB0 /* Reusable.swift in Sources */,
+				3111FD6422902D3700FB0CB0 /* Networking.swift in Sources */,
+				3122BEA4229360D6007D7A04 /* CoinDeskPriceIndexByDateResponse.swift in Sources */,
+				3111FD8E2290568000FB0CB0 /* CoinDeskEndpoint.swift in Sources */,
+				3111FD6622902D6200FB0CB0 /* Endpoint.swift in Sources */,
+				3122BEA822936354007D7A04 /* DefaultCryptoCurrencyHistoricalPriceDetailViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F657119A22945B9C00F313EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F657118D22945B9C00F313EE /* BitcoinWidget */;
+			targetProxy = F657119922945B9C00F313EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F657119522945B9C00F313EE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F657119622945B9C00F313EE /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE24D01228DF59E004E9324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE24D02228DF59E004E9324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE24D06228DF59F004E9324 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE24D07228DF59F004E9324 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F657119C22945B9C00F313EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97A8R5T5PT;
+				INFOPLIST_FILE = BitcoinWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitCoin.Sample.BitcoinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F657119D22945B9C00F313EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97A8R5T5PT;
+				INFOPLIST_FILE = BitcoinWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitCoin.Sample.BitcoinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCE24D0A228DF59F004E9324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCE24D0B228DF59F004E9324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE24D0D228DF59F004E9324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97A8R5T5PT;
+				INFOPLIST_FILE = BitCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitCoin.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCE24D0E228DF59F004E9324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97A8R5T5PT;
+				INFOPLIST_FILE = BitCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitCoin.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F657119E22945B9C00F313EE /* Build configuration list for PBXNativeTarget "BitcoinWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F657119C22945B9C00F313EE /* Debug */,
+				F657119D22945B9C00F313EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE24CF5228DF59E004E9324 /* Build configuration list for PBXProject "BitCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE24D0A228DF59F004E9324 /* Debug */,
+				FCE24D0B228DF59F004E9324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE24D0C228DF59F004E9324 /* Build configuration list for PBXNativeTarget "BitCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE24D0D228DF59F004E9324 /* Debug */,
+				FCE24D0E228DF59F004E9324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCE24CF2228DF59E004E9324 /* Project object */;
+}
